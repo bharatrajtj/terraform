@@ -6,7 +6,8 @@ provider "aws" {
 
 module "ec2" {
     source = "./modules"  ###make sure the path is mentioned is modified according to the path folders are stored in your local machine
-  
+    ami_value = "##Give AMI values"
+    instance_type_value = "###Give EC2 instance type"
 }
 
 output "ec2_output" {
